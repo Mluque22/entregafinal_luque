@@ -1,0 +1,184 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Black.ttf);
+}
+
+h1, h2, h3, h4, p, a, li{
+    font-family: Roboto;
+}
+
+/* body*/
+body {
+    background-image: linear-gradient(rgba(135, 224, 158, 0.915), rgb(135, 224, 158, 0.915)),
+    url(../assets/images/Fondo3.jpg)
+}
+
+/*header*/
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    border-bottom: solid 1px #232946
+}
+header nav ul{
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    margin: 20px;
+    gap: 30px;
+}
+.logo-celtics {
+    width: 90px;
+}
+
+ul li a:hover {
+    color: #232946;
+}
+
+ul li a:visited {
+    color: #232946;
+}
+
+/* main */
+.banner-boston img {
+    width: 100%;
+    padding: 30px;
+}
+.section-noticias{
+    border-bottom: solid 1px #232946;
+}
+.section-noticias h1, h2 {
+    padding: 30px 0px 30px 50px;
+    font-size: 25px;
+}
+main{
+    quotes: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.art-celtics {
+    padding: 30px;
+    display: flex;
+}
+.art-celtics img{
+    width: 500px;
+    height: 400px;
+}
+.art-jb-mvp{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px;
+}
+.jb-mvp {
+    padding: 10px;
+    width: 600px;
+    height: 400px;
+}
+.texto1 {
+    padding: 15px;
+}
+.texto2 {
+    padding: 15px;
+}
+/* main team */
+.team h1 {
+    padding: 20px;
+    text-align: center;
+}
+.info-team {
+    padding: 15px;
+    text-align: center;
+}
+/* main schedule */
+.schedule h1 {
+    padding: 20px;
+    text-align: center;
+}
+.info-schedule {
+    padding: 15px;
+    text-align: center;
+}
+/* main contact us */
+.border-bottom {
+    border-bottom: solid 1px #232946
+}
+.estadio_celtics {
+    padding: 20px;
+}
+.contact_us h1 {
+    padding: 20px;
+}
+.form_contact {
+    padding: 10px;
+    width: 20px;
+}
+.form_text {
+    width: 400px;
+    height: 25px;
+}
+.form_mensaje {
+    width: 400px;
+    padding: 0px;
+    height: 40px;
+}
+.button_form {
+    width: 400px;
+}
+
+/* main about us */
+.about-us h1{
+    padding: 20px;
+    text-align: center;
+}
+.historia-celtics {
+    padding: 20px;
+    text-align: center;
+    border-bottom: solid 1px #232946
+}
+
+/* footer */
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.footer-menu h4 {
+    margin: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+.footer-listas li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:baseline
+}
+.footer-info h4 {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+.texto-info {
+    margin: 10px;
+    display: flex;
+    justify-content: center
+}
+.footer-redes h4 {
+    margin: 10px;
+    display: flex;
+    justify-content:flex-end
+}
+.redes-sociales li, a {
+    text-decoration: none;
+    color: #232946;
+    display: flex;
+    justify-content: flex-start
+}
