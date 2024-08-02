@@ -6,22 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boston Celtics - Todas las novedades</title>
     <link rel="shortcut icon" href="./assets/images/WorldChampsLogo2024_Primary_cmyk.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header class="header">
-        <div class="logo-celtics">
-            <a href="./index.html"><img src="./assets/images/WorldChampsLogo2024_Primary_cmyk.svg""Logo_Celtics"></a>
-        </div>
-        <nav class="listas">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./pages/team.html">Team</a></li>
-                <li><a href="./pages/schedule.html">Schedule</a></li>
-                <li><a href="./pages/about_us.html">About us</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid nav-justified">
+                <a>
+                    <img src="./assets/images/WorldChampsLogo2024_Primary_cmyk.svg"  width="90"
+                        height="60" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler nav-color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active nav-color-a" aria-current="page"
+                                href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-color-a" href="./pages/team.html">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-color-a" href="../pages/noticias.html">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-color-a" href="../pages/contacto.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-color-a" href="./pages/contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
@@ -33,16 +56,17 @@
             <article class="art-celtics">
                 <img id="imgboston" src="./assets/images/CelticsCampeones.jpg" alt="Boston Campeon">
                 <h2 id="titlecampeones">Boston Celtics son los nuevos campeones</h2>
-                <p id="texto1" class="texto1">Los Boston Celtics se consagraron campeones de la NBA 2024 tras una espectacular
+                <p id="texto1" class="texto1">Los Boston Celtics se consagraron campeones de la NBA 2024 tras una
+                    espectacular
                     temporada. Con un juego dinámico y cohesivo, liderados por su estrella Jayson Tatum y el veterano Al
                     Horford, los Celtics superaron a sus rivales en una emocionante serie de finales. La victoria no
                     solo marca el 18º título en la historia de la franquicia, sino que también reafirma su posición como
                     uno de los equipos más legendarios y exitosos en la historia de la NBA.</p>
             </article>
             <article class="art-jb-mvp">
-                <img class="jb-mvp" src="./assets/images/JaylenBrownMVP.jpg" alt="JBMVP">
-                <h2>Jaylen Brown MVP Finals NBA 2024</h2>
-                <p class="texto2">Jaylen Brown fue coronado MVP de las finales de la NBA 2024, destacándose como la
+                <img id="imgmvp" class="jb-mvp" src="./assets/images/JaylenBrownMVP.jpg" alt="JBMVP">
+                <h2 id="titlemvp">Jaylen Brown MVP Finals NBA 2024</h2>
+                <p id="texto2" class="texto2">Jaylen Brown fue coronado MVP de las finales de la NBA 2024, destacándose como la
                     pieza clave para los Boston Celtics. Con su versatilidad ofensiva y defensiva, Brown promedió cifras
                     impresionantes y mostró una consistencia inquebrantable en momentos críticos. Su liderazgo en la
                     cancha y su capacidad para hacer jugadas decisivas llevaron a los Celtics al triunfo. Este
@@ -100,6 +124,8 @@
             </ul>
         </div>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.js.map"></script>
 </body>
 
 </html>
