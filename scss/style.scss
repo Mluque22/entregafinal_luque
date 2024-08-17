@@ -1,0 +1,164 @@
+//import
+@import "./mixin";
+@import "./team";
+@import "./contact-us";
+@import "./about-us";
+@import "./schedule";
+//nesting
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Roboto;
+    src: url(../assets/fonts/Roboto-Black.ttf);
+}
+
+h1, h2, h3, h4, p, a, li{
+    font-family: Roboto;
+}
+
+body{
+    background-image: linear-gradient(rgba(135, 224, 158, 0.915), rgb(135, 224, 158, 0.915)),
+    url(../assets/images/Fondo3.jpg);
+
+    header{
+        @include flex-row-center;
+        padding: 20px;
+        border-bottom: solid 1px #232946;
+        nav{
+            ul{
+                font-size: 15px;
+                list-style: none;
+                display: flex;
+                margin: 20px;
+                gap: 30px;
+                li a:hover{
+                    color: #232946;
+                    :visited{
+                        color: #232946;
+                    }
+                }
+            }
+        }
+    }
+}
+.nav-justified{
+    justify-content: flex-start !important;
+}
+.logo-celtics {
+    width: 90px;
+}
+
+main{
+    quotes: 100%;
+    height: 100%;
+    object-fit: cover;
+    .banner-boston img {
+        width: 100%;
+        padding: 30px;
+    }
+    .section-noticias{
+        border-bottom: solid 1px #232946;
+        display: flex;
+        flex-direction: column;
+        h1, h2{
+            padding: 30px 0px 30px 50px;
+            font-size: 25px;
+        }
+        .art-celtics {
+            padding: 30px;
+            display: grid;
+            grid-template-areas:
+            "imgboston titlecampeones titlecampeones"
+            "imgboston texto1 texto1"
+            "imgboston texto1 texto1";
+            grid-template-rows: 0.10fr 0.5fr 0.5fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px;
+            #imgboston{
+                grid-area: imgboston;
+            }
+            #titlecampeones{
+                grid-area: titlecampeones;
+            }
+            #texto1{
+                grid-area: texto1;
+            }
+        }
+        .art-celtics img{
+            border-radius: 1%;
+            width: 100%;
+            height: 100%;
+        }
+        .art-jb-mvp {
+            padding: 30px;
+            display: grid;
+            grid-template-areas:
+            "titlemvp titlemvp imgmvp "
+            "texto2 texto2 imgmvp "
+            "texto2 texto2 imgmvp ";
+            grid-template-rows: 0.10fr 0.5fr 0.5fr;
+            grid-template-columns: 0.25fr 0.5fr 1fr;
+            gap: 15px;
+            #imgmvp{
+                grid-area: imgmvp;
+            }
+            #titlemvp{
+                grid-area: titlemvp;
+            }
+            #texto2{
+                grid-area: texto2;
+            }
+        }
+        .art-jb-mvp img {
+            border-radius: 1%;
+            width: 70%;
+            height: 50%;
+        }
+        .texto1 {
+            padding: 15px;
+        }
+        .texto2 {
+            padding: 15px;
+        }
+    }
+}
+
+footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .footer-menu h4 {
+        margin: 10px;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .footer-listas li{
+        @include flex-column-start-baseline;
+    }
+    .footer-info h4 {
+        margin: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .texto-info {
+        margin: 10px;
+        display: flex;
+        justify-content: center
+    }
+    .footer-redes h4 {
+        margin: 10px;
+        display: flex;
+        justify-content:flex-end
+    }
+    .redes-sociales li, a {
+        text-decoration: none;
+        color: #232946;
+        display: flex;
+        justify-content: flex-start
+    }
