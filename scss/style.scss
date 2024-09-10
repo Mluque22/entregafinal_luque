@@ -4,6 +4,7 @@
 @import "./contact-us";
 @import "./about-us";
 @import "./schedule";
+@import "./variables";
 //nesting
 *{
     padding: 0px;
@@ -26,7 +27,7 @@ body{
     header{
         @include flex-row-center;
         padding: 20px;
-        border-bottom: solid 1px #232946;
+        border-bottom: solid 1px $color-principal;
         nav{
             ul{
                 font-size: 15px;
@@ -34,10 +35,11 @@ body{
                 display: flex;
                 margin: 20px;
                 gap: 30px;
+                cursor: pointer;
                 li a:hover{
-                    color: #232946;
+                    color: $color-principal;
                     :visited{
-                        color: #232946;
+                        color: $color-principal;
                     }
                 }
             }
@@ -60,7 +62,7 @@ main{
         padding: 30px;
     }
     .section-noticias{
-        border-bottom: solid 1px #232946;
+        border-bottom: solid 1px $color-principal;
         display: flex;
         flex-direction: column;
         h1, h2{
@@ -131,6 +133,7 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         padding: 20px;
+        border-top: 1px solid #232946;
     }
     
     .footer-menu h4 {

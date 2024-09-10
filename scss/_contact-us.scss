@@ -1,29 +1,79 @@
-.border-bottom {
-    border-bottom: solid 1px #232946
+*{
+    margin: 0;
+    box-sizing: border-box;
 }
-.estadio_celtics img{
+.main-contacto{
     display: flex;
-    border-radius: 3%;
-    padding: 5px;
-    width: 50%;
-    height: 500px;
-}
-.contact_us h1 {
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
     padding: 20px;
+    gap: 20px;
 }
-.form_contact {
+.formulario-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    width: 100%;
+}
+.text-center{
+    text-align: center !important;
+}
+.mt-3{
+    margin-top: 1rem !important;
+}
+legend{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-bottom: .5rem;
+    font-size: calc(1.275rem + .3vw);
+    line-height: inherit;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    display: inline-block;
+}
+.p-1{
+    padding: .25rem !important;
+}
+.m-1{
+    margin: .25rem !important;
+}
+button, input, optgroup, select, textarea{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.text-formulario{
     padding: 10px;
-    width: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 150px;
 }
-.form_text {
-    width: 400px;
-    height: 25px;
+textarea{
+    resize: vertical;
 }
-.form_mensaje {
-    width: 400px;
-    padding: 0px;
-    height: 40px;
+.btn-submit{
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #115017;
+    color: white;
+    font-size: 16px;
 }
-.button_form {
-    width: 400px;
+section{
+    display: block;
+    unicode-bidi: isolate;
+}
+.ubicacion-contacto{
+    width: 600px;
 }
